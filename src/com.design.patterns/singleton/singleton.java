@@ -1,4 +1,4 @@
-package design.singleton;
+package singleton;
 
 /**
  * Created by wxy on 2017/8/9 0009.
@@ -13,5 +13,9 @@ public class singleton {
             singleton=new singleton();
         }
         return singleton;
+    }
+
+    public static void main(String[] args) {
+        System.out.println("ssss");
     }
 }
