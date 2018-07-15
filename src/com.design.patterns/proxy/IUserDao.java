@@ -2,9 +2,9 @@ package proxy;
 
 /**
  * @author WXY
- *  抽象角色
+ *  抽象角色--接口
  */
-public interface IUser {
+public interface IUserDao {
 
     void save();
 
