@@ -1,6 +1,7 @@
-package proxy.jdk;
+package com.design.patterns.proxy.jdk;
 
-import proxy.IUserDao;
+
+import com.design.patterns.proxy.IUserDao;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

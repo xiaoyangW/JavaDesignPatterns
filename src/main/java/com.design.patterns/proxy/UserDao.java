@@ -1,4 +1,4 @@
-package proxy;
+package com.design.patterns.proxy;
 
 /**
  * @author WXY
