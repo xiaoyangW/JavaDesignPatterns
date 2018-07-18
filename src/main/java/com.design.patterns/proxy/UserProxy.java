@@ -11,7 +11,6 @@ public class UserProxy implements IUserDao{
     public UserProxy(IUserDao userDao) {
         this.userDao = userDao;
     }
-
     @Override
     public void save() {
         System.out.println("-------------start-----------");

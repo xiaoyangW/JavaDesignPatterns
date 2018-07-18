@@ -4,9 +4,7 @@ package com.design.patterns.proxy;
  * @author WXY
  * 接口实现--目标对象
  */
-public class UserDao implements IUserDao {
-
-
+public class UserImpl implements IUserDao {
 
     @Override
     public void save() {

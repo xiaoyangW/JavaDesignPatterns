@@ -9,6 +9,7 @@ import java.lang.reflect.Proxy;
 
 /**
  * @author WXY
+ * jdk-动态代理类
  */
 public class ProxyFactory implements InvocationHandler {
 
