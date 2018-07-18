@@ -1,4 +1,4 @@
-package singleton;
+package com.design.patterns.singleton;
 
 /**
  * Created by wxy on 2017/8/9 0009.
