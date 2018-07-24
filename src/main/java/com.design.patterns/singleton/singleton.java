@@ -8,6 +8,9 @@ public class singleton {
 
     private static singleton singleton;
 
+    private singleton() {
+    }
+
     public singleton getSingleton(){
         if (singleton==null){
             singleton=new singleton();
@@ -16,6 +19,6 @@ public class singleton {
     }
 
     public static void main(String[] args) {
-        System.out.println("ssss");
+        singleton singleton1 = singleton.getSingleton();
     }
 }
