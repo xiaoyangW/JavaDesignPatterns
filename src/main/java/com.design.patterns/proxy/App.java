@@ -14,13 +14,13 @@ public class App {
 
         IUserDao userDao = new UserImpl();
         //静态代理
-        /*UserProxy userProxy = new UserProxy(userDao);
-        userProxy.save();*/
+        UserProxy userProxy = new UserProxy(userDao);
+        userProxy.save();
         //jdk动态代理
-        /*IUserDao user = (IUserDao) new ProxyFactory().getInstance(userDao);
-        user.save();*/
-
-        IUserDao proxyUserDao = (IUserDao)CglibProxy.getInstance(userDao);
+        IUserDao user = (IUserDao) new ProxyFactory().getInstance(userDao);
+        user.save();
+        //cglib动态代理
+        IUserDao proxyUserDao = (IUserDao)CglibProxy.getInstance(UserImpl.class);
         proxyUserDao.save();
 
     }
